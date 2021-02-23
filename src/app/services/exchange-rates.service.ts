@@ -12,7 +12,7 @@ export class ExchangeRatesService {
     
   
   getRates(base: string): Observable<ExhangeRatesResponse> {
-      return this.httpClient.get<ExhangeRatesResponse>('https://api.exchangeratesapi.io/latest?base=${base}')
+      return this.httpClient.get<ExhangeRatesResponse>(`https://api.exchangeratesapi.io/latest?base=${base}`)
     }
   }
 
